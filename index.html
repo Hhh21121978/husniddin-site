@@ -3,38 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qog‘oz loyihasi</title>
+  <title>Husniddin Sayti</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      color: #333;
+      overflow-x: hidden;
+      animation: fadeIn 2s ease-in-out;
     }
 
-    body {
-      height: 100vh;
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5fa);
-      background-size: 400% 400%;
-      animation: gradientShift 10s ease infinite;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    nav a {
       color: white;
-      overflow: hidden;
+      text-decoration: none;
+      padding: 15px 25px;
+      transition: 0.3s;
+      font-weight: bold;
     }
 
-    h1 {
-      font-size: 3em;
-      animation: fadeInUp 3s ease-in-out;
-      text-shadow: 0 0 15px rgba(255,255,255,0.6);
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: #000;
+      border-radius: 8px;
     }
 
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(60px); }
-      100% { opacity: 1; transform: translateY(0); }
+    section {
+      padding: 40px;
+      text-align: center;
+      animation: slideUp 1.5s ease-in-out;
     }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hurmatli saytimiz foydalanuvchilari</h1>
+  </header>
+
+  <nav>
+    <a href="#bosh">Bosh sahifa</a>
+    <a href="#yangilik">Yangiliklar</a>
+    <a href="#biz">Biz haqimizda</a>
+    <a href="#aloqa">Aloqa</a>
+  </nav>
+
+  <section id="bosh">
+    <h2>Husniddin Hafizov sayti</h2>
+    <p>Bu sahifa siz uchun qulay va zamonaviy ko‘rinishda tayyorlangan.</p>
+  </section>
+
+  <section id="yangilik">
+    <h2>Yangiliklar</h2>
+    <p>So‘nggi yangiliklar tez orada joylanadi.</p>
+  </section>
+
+  <section id="biz">
+    <h2>Biz haqimizda</h2>
+    <p>Biz foydalanuvchil    }
 
     @keyframes gradientShift {
       0% { background-position: 0% 50%; }

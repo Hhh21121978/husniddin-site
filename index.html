@@ -5,30 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qog‘oz loyihasi</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: "Poppins", sans-serif;
-      color: white;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      flex-direction: column;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5fa);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      color: white;
+      overflow: hidden;
     }
 
     h1 {
       font-size: 3em;
-      animation: fadeIn 3s ease-in-out;
+      animation: fadeInUp 3s ease-in-out;
+      text-shadow: 0 0 15px rgba(255,255,255,0.6);
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(60px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .media {
+      margin-top: 40px;
+      opacity: 0;
+      animation: fadeIn 5s ease-in forwards 3s;
     }
 
     @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
   <h1>Qog‘oz loyihasiga xush kelibsiz!</h1>
+  <div class="media">
+    <img src="background.jpg" alt="Qog‘oz loyihasi fon rasmi">
+  </div>
 </body>
 </html>

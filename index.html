@@ -1,40 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zamonaviy inson uchun 5 foydali maslahat — Foydali maslahatlar</title>
-  <meta name="description" content="Zamonaviy hayot uchun amaliy va ruhiy foydali maslahatlar: vaqtni boshqarish, ijobiy fikrlash, stressni yengish va boshqalar." />
-  <link rel="icon" href="/images/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texnik va ilmiy dunyo</title>
+
   <style>
-    /* Oddiy, toza va responsiv dizayn */
-    :root{
-      --bg: #f7f9fc;
-      --card: #ffffff;
-      --muted: #6b7280;
-      --accent: #0f766e;
-      --accent-2: #10b981;
-      --radius: 12px;
-      font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:#0f172a;
-      line-height:1.6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      padding:24px;
-      display:flex;
-      justify-content:center;
+
+    header {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
     }
-    .container{
-      width:100%;
-      max-width:900px;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #e0e0e0;
+      padding: 10px;
+      flex-wrap: wrap;
     }
-    header{
-      display:flex;
+
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      margin: 5px 10px;
+      padding: 8px 12px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #003366;
+      color: white;
+    }
+
+    section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    section img {
+      display: block;
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 10px auto;
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #003366;
+      color: white;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🧠 Texnik va ilmiy dunyo</h1>
+  </header>
+
+  <nav>
+    <a href="#kompyuter">💻 Kompyuter texnikasi</a>
+    <a href="#dasturlash">👨‍💻 Dasturlash</a>
+    <a href="#texnika">⚙️ Ommabop texnika</a>
+    <a href="#tabiiy">🌿 Tabiiy rasmlar</a>
+    <a href="#aloqa">📩 Aloqa</a>
+  </nav>
+
+  <section id="kompyuter">
+    <h2>💻 Kompyuter texnikasi</h2>
+    <p>Bu bo‘limda kompyuter qismlari — RAM, protsessor, anakart va boshqa qurilmalar haqida ma’lumotlar joylashadi. 
+    Texnik tajribalarim, sinovlar va kuzatuvlar shu yerda bo‘ladi.</p>
+    <img src="images/kompyuter.jpg" alt="Kompyuter texnikasi">
+  </section>
+
+  <section id="dasturlash">
+    <h2>👨‍💻 Dasturlash</h2>
+    <p>Bu bo‘limda Python, Delphi, Sketchware va AIDE orqali ilovalar yaratish haqida foydali ma’lumotlar beriladi.
+    Shuningdek, dasturlashni o‘rganish uchun oddiy amaliy misollar ham joylashtiriladi.</p>
+  </section>
+
+  <section id="texnika">
+    <h2>⚙️ Ommabop texnika</h2>
+    <p>Bu qismda kundalik hayotda ishlatiladigan zamonaviy texnikalar haqida foydali tavsiyalar va kuzatuvlar joylashadi.</p>
+  </section>
+
+  <section id="tabiiy">
+    <h2>🌿 Tabiiy rasmlar</h2>
+    <p>Tabiatning go‘zalligini aks ettiruvchi suratlar, cho‘l manzaralari, dengiz va hayvonot olami bu yerda joylashadi.</p>
+  </section>
+
+  <section id="aloqa">
+    <h2>📩 Aloqa</h2>
+    <p>Agar sizda fikr, taklif yoki savol bo‘lsa, quyidagi manzil orqali murojaat qiling:</p>
+    <p><strong>Email:</strong> husniddin@example.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Husniddin Hafizov – "DaftarVaraq25" loyihasi
+  </footer>
+
+</body>
+                                                                                                                          </html>      display:flex;
       gap:16px;
       align-items:center;
       margin-bottom:20px;

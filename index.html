@@ -1,40 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texnik va ilmiy dunyo</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Husniddin-site</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f8f8;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+    /* Oddiy, toza uslub */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background:#f7f7f7; color:#222; }
+    header { background: #0b5; padding: 18px 20px; color: #032; }
+    nav { display:flex; gap:12px; margin-top:6px; }
+    nav a { color:#032; text-decoration:none; padding:6px 10px; border-radius:6px; background:rgba(255,255,255,0.6); }
+    main { padding:20px; max-width:1000px; margin:20px auto; background:white; border-radius:8px; box-shadow:0 3px 10px rgba(0,0,0,0.06); }
+    .hero { display:flex; flex-direction:column; gap:14px; align-items:center; }
+    img.responsive { max-width:100%; height:auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    footer { text-align:center; padding:14px; color:#666; font-size:14px; margin-top:18px; }
+    .note { font-size:13px; color:#555; background:#f0f0f0; padding:8px; border-radius:6px; width:100%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Husniddin-site</h1>
+    <nav>
+      <a href="index.html">Bosh sahifa</a>
+      <a href="about.html">Haqida</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
 
-    header {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-    }
+  <main>
+    <section class="hero">
+      <h2>Rasm namunasi</h2>
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #e0e0e0;
-      padding: 10px;
-      flex-wrap: wrap;
-    }
+      <!-- Muhim: rasm papkangiz repo ichida `images/rasm1.jpg` joylashgan bo'lishi kerak -->
+      <img
+        src="images/rasm1.jpg"
+        alt="Sayt uchun namunaviy rasm"
+        class="responsive"
+        loading="lazy"
+        width="1200"
+        height="700"
+      />
 
-    nav a {
-      color: #003366;
-      text-decoration: none;
-      margin: 5px 10px;
-      padding: 8px 12px;
-      font-weight: bold;
+      <p class="note">
+        Agar rasm ko'rinmasa: quyidagi tekshiruvlardan o'tkazing —
+        1) `images/rasm1.jpg` fayl repo ichida bor va commit qilinganmi; 
+        2) fayl nomi (katta/ kichik harf) URL bilan mosmi; 
+        3) index.html bilan bir xil papka darajasida `images/` papkasi joylashganmi.
+      </p>
+    </section>
+
+    <section>
+      <h3>Sahifa mazmuni</h3>
+      <p>Bu sahifa sayt uchun asosiy namuna. Menyuni to'ldirib, rasmlar va matnlarni o'zgartirishingiz mumkin.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Husniddin. Barcha huquqlar himoyalangan.
+  </footer>
+
+  <script>
+    // Yilni avtomatik qo'yish
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>      font-weight: bold;
       border-radius: 5px;
       transition: 0.3s;
     }

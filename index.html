@@ -1,40 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Texnik va Ilmiy Dunyo – Husniddin Hafizov</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zamonaviy inson uchun 5 foydali maslahat — Foydali maslahatlar</title>
+  <meta name="description" content="Zamonaviy hayot uchun amaliy va ruhiy foydali maslahatlar: vaqtni boshqarish, ijobiy fikrlash, stressni yengish va boshqalar." />
+  <link rel="icon" href="/images/favicon.png" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #222;
+    /* Oddiy, toza va responsiv dizayn */
+    :root{
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --accent-2: #10b981;
+      --radius: 12px;
+      font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
     }
-    header {
-      background: linear-gradient(to right, #1a73e8, #004aad);
-      color: white;
-      padding: 20px;
-      text-align: center;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#0f172a;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+      display:flex;
+      justify-content:center;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #004aad;
-      flex-wrap: wrap;
+    .container{
+      width:100%;
+      max-width:900px;
     }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      font-weight: bold;
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:20px;
     }
-    nav a:hover {
-      background-color: #1a73e8;
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:20px;
+      box-shadow:0 6px 18px rgba(15,118,110,0.12);
     }
-    section {
-      display: flex;
+    h1{
+      margin:0;
+      font-size:20px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 6px 24px rgba(15,23,42,0.06);
+      margin-bottom:18px;
+    }
+
+    .hero{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .hero img{
+      max-width:240px;
+      width:100%;
+      border-radius:10px;
+      object-fit:cover;
+      box-shadow:0 8px 28px rgba(2,6,23,0.06);
+    }
+
+    .list{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    @media(min-width:720px){
+      .list{
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    .item{
+      padding:14px;
+      border-radius:10px;
+      background:linear-gradient(180deg,#ffffff,#fbfdff);
+      border:1px solid rgba(2,6,23,0.03);
+    }
+    .item h3{
+      margin:0 0 8px 0;
+      font-size:16px;
+    }
+    .item p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .cta{
+      display:flex;
+      gap:10px;
+      margin-top:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      background:var(--accent);
+      color:white;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(15,118,110,0.12);
+    }
+    .btn.alt{
+      background:transparent;
+      border:1px solid rgba(15,118,110,0.12);
+      color:var(--accent);
+    }
+
+    footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:10px;
+    }
+
+    /* Qisqacha styling content uchun */
+    .content p{margin:0 0 10px 0}
+    .highlight{color:var(--accent); font-weight:700}
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div class="logo">FM</div>
+      <div>
+        <h1>Zamonaviy inson uchun 5 foydali maslahat</h1>
+        <div class="meta">Foydali maslahatlar • Yangilandi: <time datetime="2025-10-29">29 Oktabr 2025</time></div>
+      </div>
+    </header>
+
+    <article class="card hero" aria-labelledby="post-title">
+      <!-- Rasmlar papkangizda bo'lsa /images/ yordamida o'zgartiring -->
+      <img src="/images/foydali-maslahat.jpg" alt="Foydali maslahatlar" onerror="this.src='https://via.placeholder.com/400x250?text=Foydali+Maslahatlar'">
+      <div class="content" id="post-title">
+        <p class="highlight">Hayotda samaradorlik va ruhiy barqarorlikni saqlash uchun oddiy va amaliy maslahatlar.</p>
+        <p>Quyida har kuni hayotingizga tatbiq etishingiz mumkin bo‘lgan 5 asosiy tamoyil keltirilgan. Ularni kichik odatlarga aylantirib boring — natijasi tez orada sezilib qoladi.</p>
+
+        <div class="list" role="list">
+          <section class="item" role="listitem">
+            <h3>1. 🕒 Vaqtingizni qadrlang</h3>
+            <p>Har kuni kichik rejani yozing. Eng muhim vazifalarni birinchi o‘ringa qo‘yib, vaqtni bo‘laklarga ajrating. Bu charchoq va shoshilinchlikni kamaytiradi.</p>
+          </section>
+
+          <section class="item" role="listitem">
+            <h3>2. 💭 Ijobiy fikrlang</h3>
+            <p>Salbiy o‘ylar kuchli motivatsiyani yutadi. Har bir muammoni imkoniyat sifatida ko‘ring va “Men buni uddalayman” fikrini mashq qiling.</p>
+          </section>
+
+          <section class="item" role="listitem">
+            <h3>3. 🧘 Ruhiy tinchlikni saqlang</h3>
+            <p>Har kuni 10 daqiqa nafas mashqlari yoki qisqa yurishlar stressni kamaytiradi. Telefonni biroz chetga qo‘yib, o'zingizga vaqt ajrating.</p>
+          </section>
+
+          <section class="item" role="listitem">
+            <h3>4. 📚 Bilimingizni kengaytiring</h3>
+            <p>Internetdagi qisqa kurslar, kitoblar yoki yangi tillar sizni doimo rivojlantiradi. Kuniga 15–30 daqiqa o‘rganishga ajrating.</p>
+          </section>
+
+          <section class="item" role="listitem">
+            <h3>5. 💬 Yaxshi so‘z bilan yashang</h3>
+            <p>Samimiy so‘zlar va muloyim muomala munosabatlarni mustahkamlaydi. Kichik bir iltifot ham boshqalarning kuni va kayfiyatini ko‘taradi.</p>
+          </section>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="/index.html">Bosh sahifaga qaytish</a>
+          <a class="btn alt" href="/kontakt.html">Fikr-mulohaza yuborish</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="card">
+      <h3 style="margin-top:0">Qo‘shimcha takliflar</h3>
+      <p class="meta" style="margin-bottom:6px">Saytingiz foydalanuvchilariga qoʻshimcha qiymat berish uchun:</p>
+      <ul style="margin:0 0 0 18px; color:var(--muted)">
+        <li>Har bir maslahat uchun qisqa video yoki audio izoh qoʻshing — bu ko‘proq jalb etadi.</li>
+        <li>Maqolani print-versiya (PDF) qilib yuklab olish tugmasini qoʻshing.</li>
+        <li>Foydalanuvchilardan o‘z maslahatlarini qoldirish uchun sharh bo‘limini faollashtiring.</li>
+      </ul>
+    </div>
+
+    <footer>
+      © 2025 Sizning Saytingiz • Barcha huquqlar himoyalangan
+    </footer>
+  </main>
+</body>
+  </html>      display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 30px;

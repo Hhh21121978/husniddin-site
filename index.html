@@ -3,38 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>daftarvaraq25</title>
+  <title>Texnik va Ilmiy Dunyo – Husniddin Hafizov</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f9;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f9;
+      color: #222;
     }
     header {
-      background: #3b3b98;
+      background: linear-gradient(to right, #1a73e8, #004aad);
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 15px 0;
-      font-size: 1.5em;
     }
     nav {
-      background: #23235b;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      background-color: #004aad;
+      flex-wrap: wrap;
     }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline-block;
-      margin: 0 15px;
-    }
-    nav ul li a {
+    nav a {
       color: white;
+      padding: 14px 20px;
       text-decoration: none;
       font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #1a73e8;
+    }
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+      background-color: white;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    section div.text {
+      flex: 1;
+      padding-right: 20px;
+      min-width: 250px;
+    }
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+      section div.text {
+        padding: 0;
+      }
+      section img {
+        margin-top: 15px;
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Texnik va Ilmiy Dunyo</h1>
+    <p>Husniddin Hafizov tomonidan yaratilgan texnik va dasturlash loyihalari</p>
+  </header>
+
+  <nav>
+    <a href="#kompyuter">Kompyuter texnikasi</a>
+    <a href="#dasturlash">Dasturlash</a>
+    <a href="#texnika">Ommabop texnika</a>
+    <a href="#tabiat">Tabiiy rasmlar</a>
+    <a href="#aloqa">Aloqa</a>
+  </nav>
+
+  <section id="kompyuter">
+    <div class="text">
+      <h2>💻 Kompyuter texnikasi</h2>
+      <p>Bu bo‘limda kompyuter qismlari — RAM, prosessor, anakart va boshqa qurilmalar haqida ma’lumotlar joylashadi. Texnik tajribalarim, sinovlar va kuzatuvlar shu yerda bo‘ladi.</p>
+    </div>
+    <img src="images/kompyuter.jpg" alt="Kompyuter texnikasi">
+  </section>
+
+  <section id="dasturlash">
+    <div class="text">
+      <h2>👨‍💻 Dasturlash</h2>
+      <p>Python, Delphi, Sketchware va AIDE orqali      font-weight: bold;
       padding: 10px;
       display: inline-block;
     }

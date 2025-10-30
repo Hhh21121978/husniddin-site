@@ -1,15 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Husniddin sayt</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husniddin Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Salom — rasm tekshiruvi</h1>
-  <p>Agar images/rasm1.jpg to‘g‘ri joyda bo‘lsa, rasm ostida chiqishi kerak:</p>
-  <img src="images/rasm1.jpg" alt="rasm1" style="max-width:100%;height:auto;" />
-  <p>Yoki raw.githubusercontent orqali:</p>
-  <img src="https://raw.githubusercontent.com/HusniddinHafizov/husniddin-site/main/images/rasm1.jpg" alt="rasm1-raw" style="max-width:100%;height:auto;" />
+  <header>
+    Husniddin Hafizov Sayti
+  </header>
+  <main>
+    <h2>Texnik va Ilmiy Dunyo</h2>
+    <p>Bu sahifada siz turli foydali ma'lumotlar, rasmlar va texnik yangiliklarni topasiz.</p>
+
+    <!-- Quyidagi rasmga versiya parametri qo‘shildi -->
+    <img src="images/rasm1.jpg?v=1.0" alt="Sayt rasmi">
+    
+    <p>Rasm kesh muammosini oldini olish uchun versiya raqami qo‘shildi.</p>
+  </main>
 </body>
 </html>

@@ -1,22 +1,73 @@
-/* Oddiy, toza va mobilga mos CSS */
-:root{
+/* Oddiy, toza va mobilga mos CSS uslubi */
+:root {
   --maxw: 900px;
   --accent: #0b74de;
 }
-*{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
-body{line-height:1.6;color:#222;padding:20px;background:#f7f9fc;display:flex;justify-content:center;}
-.site-header{max-width:var(--maxw);width:100%;background:white;padding:28px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);text-align:center;margin-bottom:16px;}
-.subtitle{color:#555;margin-top:8px;}
-.content{max-width:var(--maxw);width:100%;background:white;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
-.content h2{margin-top:12px;color:var(--accent);}
-.content p, .content li{margin-top:8px;color:#333;}
-.site-footer{max-width:var(--maxw);width:100%;text-align:center;margin-top:12px;color:#666;}
-@media(min-width:800px){
-  body{padding:40px;}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+
+  /* Fon rasmi */
   background-image: url("images/rasm1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;           /* Ekranga to‘liq sig‘adi */
+  background-repeat: no-repeat;     /* Takrorlanmaydi */
+  background-position: center;      /* O‘rtaga joylashadi */
+  min-height: 100vh;                /* Butun ekran bo‘yi */
+}
+
+/* Sarlavha va tarkib */
+.site-header,
+.site-footer,
+.content {
+  max-width: var(--maxw);
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Yengil oq fon shaffof */
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.site-header h1 {
+  color: var(--accent);
+  text-align: center;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.content h2 {
+  margin-top: 12px;
+  color: var(--accent);
+}
+
+.content p,
+.content li {
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* Pastki qism */
+.site-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* Katta ekranlar uchun */
+@media (min-width: 800px) {
+  body {
+    padding: 40px;
+  }
 }
